@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body{
+    max-width:1440px;
+    font-family:Plus Jakarta Sans;
+    
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:650px;
+    margin:40px auto;
+    padding: 15px 30px;
+}
+
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+h1{
+    text-transform:capitalize;
+}
+
+h4{
+    font-weight:500;
+    color:hsl(219, 12%, 42%);
+}
+
+h4:hover{
+    cursor:pointer;
+    color:hsl(219, 85%, 26%);
+}
+
+
+.reaction{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-family:Plus Jakarta Sans;
+    font-size:16px;
+    color:hsl(219, 12%, 42%);
+    font-weight:500;
+    margin-bottom:5px;
+    padding:5px 20px;
+    
+}
+
+.unread{
+    
+    background-color:hsl(210, 60%, 98%);
+    border-radius:6px;
+}
+
+.dot{
+    background-color:hsl(1, 90%, 64%);
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    display:inline-block;
+    margin:2px 7px;
+   
+    
+}   
+
+.activity, .group{
+    font-weight:800;
+   
+}
+
+.group{
+    color:hsl(219, 85%, 26%);
+}
+
+.activity:hover, .group{
+    cursor:pointer;
+    color:hsl(219, 85%, 26%);
+}
+
+.message{
+    padding:18px;
+    width:520px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius:6px;
+}
+
+.message:hover{
+    cursor:pointer;
+    background-color:hsl(205, 33%, 90%);
+}
+
+#chess{
+    float:right;
+    margin-left:170px;
+}
+
+#chess:hover{
+    cursor:pointer;
+}
+
+
+
+#comment{
+   display:flex;
+   align-items:baseline;  
+}
+
+.number{
+    font-size:18px;
+    font-weight:800;
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(224, 21%, 14%);
+    width:30px;
+    float:right;
+    text-align:center;
+    margin-top:10px;
+    margin-left:20px;
+    border-radius: 5px;
+    padding:2px;
+    
+}
+
+img{
+    height:40px;
+    width:40px;
+    vertical-align:top;
+   
+}
+
+
+
+.name{
+    text-transform:capitalize;
+    font-weight:800;
+    color:black;
+}
+
+.name:hover{
+    cursor:pointer;
+    color:hsl(219, 85%, 26%);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Notifications <span class="number">3</span></h1>
+      <h4 class="mark">Mark all as read</h4>
+    </header>
+
+    <div class="reaction unread">
+      <img src="assets/images/avatar-mark-webber.webp" alt="mark">
+      <p><span class="name">Mark Webber</span> reacted to your recent post <span class="activity"> My first tournament today!</span><span class="dot"></span><br>
+      <span class="time">1m ago</span></p>
+    </div>
+
+    <div class="reaction unread">
+      <img src="assets/images/avatar-angela-gray.webp" alt="angela">
+      <p><span class="name">Angela Gray</span> followed you <span class="dot"></span><br>
+      <span class="time">5m ago</span>
+    </div>
+     
+    <div class="reaction unread">
+      <img src="assets/images/avatar-jacob-thompson.webp" alt="jacob">
+      <p><span class="name">jacob thompson</span> has joined your group<span class="group"> Chess Club</span><span class="dot"></span><br>
+      <span class="time">1 day ago</span></p>
+    </div>
+
+    <div class="reaction" id="comment">
+      <div>
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="rizky">
+      </div>
+      <div>
+        <p><span class="name">rizky hasanuddin</span> sent you a private message <br>
+          <span class="time">5 days ago</span></p>
+          <p class="message"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.</p>
+      </div>
+      
+    </div>
+
+    <div class="reaction">
+      <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly">
+      <p><span class="name">kimberly smith</span> commented on our picture <br>
+      <span class="time">1 week ago</span></p>
+      <img src="assets/images/image-chess.webp" alt="" id="chess">
+    </div>
+
+    <div class="reaction">
+      <img src="assets/images/avatar-nathan-peterson.webp" alt="nathan">
+      <p><span class="name">nathan peterson</span> reacted to your recent post<span class="activity"> 5 end-game strategies to increase our win rate</span><br>
+      <span class="time">2 weeks ago</span></p>
+    </div>
+
+    <div class="reaction">
+      <img src="assets/images/avatar-anna-kim.webp" alt="anna">
+      <p><span class="name">anna kim</span>  left the group<span class="group"> Chess Club</span> <br>
+      <span class="time">2 weeks ago</span></p>
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+
+</body>
+</html>
