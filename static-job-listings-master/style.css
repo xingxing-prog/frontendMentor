@@ -1,0 +1,13 @@
+ .job{
+    display:flex;
+    gap:5rem;
+ }
+
+ .new{
+    background-color:hsl(180, 31%, 95%);
+ }
+
+ .description{
+    display:flex;
+    gap:2rem;
+ }
