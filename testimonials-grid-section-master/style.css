@@ -1,0 +1,143 @@
+body{
+   
+    font-family:"Barlow Semi Condensed";
+    background-color:hsl(210, 46%, 95%);
+   
+}
+
+main{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    justify-content:center;
+    align-content:center;
+    column-gap:10px;
+    row-gap:30px;
+    box-sizing:border-box;
+    grid-template-columns:250px 250px 50px 250px 250px;
+    grid-template-rows:300px 270px;
+}
+
+.daniel{
+    width:550px;
+    background-color:hsl(263, 55%, 52%);
+    padding:8px 32px 20px 32px;
+    border-radius:8px;
+    background-image:url(images/bg-pattern-quotation.svg);
+    background-repeat:no-repeat;
+    color:hsl(0, 0%, 100%);
+    background-position:375px 0px;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    box-sizing:border-box;
+    
+}
+
+.jonathan{
+
+    width:250px;
+    background-color:hsl(217, 19%, 35%);
+    padding:8px 32px 20px 32px;
+    border-radius:8px;
+    box-sizing:border-box;
+    color:hsl(0, 0%, 100%);
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    
+}
+
+.kira{
+    width:250px;
+    background-color:hsl(0, 0%, 100%);
+    padding:8px 32px 20px 32px;
+    border-radius:8px;
+    box-sizing:border-box;
+    color:hsl(219, 29%, 14%);
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:3;
+    margin-left:20px;
+    
+}
+
+.jeanette{
+    width:250px;
+    background-color:hsl(0, 0%, 100%);
+    padding:8px 32px 20px 32px;
+    border-radius:8px;
+    box-sizing:border-box;
+    color:hsl(219, 29%, 14%);
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.patrick{
+    width:550px;
+    background-color:hsl(219, 29%, 14%);
+    padding:8px 32px 20px 32px;
+    border-radius:8px;
+    box-sizing:border-box;
+    color:hsl(0, 0%, 100%);
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+    margin-left:20px;
+    
+}
+
+
+
+h4{
+    font-weight:bold;
+    font-size:20px;
+    margin:0;
+    padding:0;
+    
+}
+
+.name{
+    font-weight:800;
+
+}
+
+.verified{
+    opacity:0.5;
+    font-size:13px;
+}
+
+.review{
+    opacity:0.7;
+    font-size:13px;
+    line-height:1.5;
+
+}
+
+
+
+
+
+.brief{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    padding:0;
+    margin:0;
+   
+}
+
+.faceLogo{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    border:2px solid hsl(273, 79%, 30%);
+    padding:0;
+    margin:0;
+}
