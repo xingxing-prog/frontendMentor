@@ -2,10 +2,19 @@
    font-family:League Spartan;
    src:url(font/LeagueSpartan-VariableFont_wght.ttf);
  }*/
+
+ html, body{
+  background-color:hsl(180, 52%, 96%);
+  font-family:"League Spartan";
+  max-width:1440px;
+  margin:0 auto;
+ }
  
  main{
    display:flex;
    flex-direction:column;
+   justify-content:center;
+   align-items:center;
    gap:1rem;
    background-color:hsl(180, 52%, 96%);
    font-size:15px;
@@ -16,16 +25,21 @@
  header{
 
       background-color:hsl(180, 8%, 52%);
+      margin-bottom:3rem;
  }
   
  
  .job{
     width:80%;
-    margin:0 auto;
-    padding:2rem;
+   
+    padding:1.5rem 2rem;
     display:flex;
-    gap:2rem;
+    align-items:center;
+    gap:1rem;
     background-color:#fff;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0 #ddd;
+    border-radius:0.2rem;
+    margin-bottom:0.5rem;
     
  }
 
@@ -46,7 +60,8 @@
 
  .position{
    font-weight:bold;
-   font-size:20px;
+   font-size:15px;
+ 
  }
 
  .description{
@@ -57,6 +72,7 @@
  .company{
    color:hsl(180, 29%, 50%);
    font-weight:bold;
+ 
   
    
  }
@@ -77,6 +93,17 @@
    font-size:15px;
  }
 
+ .table{
+    position:absolute;
+    right: 9rem;
+    font-weight:700;
+    color:hsl(180, 29%, 50%);
+ }
+
  .option{
-  margin-left:1rem;
+     margin-left:1rem;
+     background-color: hsl(180, 31%, 95%);
+     padding:0.5rem 0.5rem;
+     border-radius:0.4rem;
+     
  }

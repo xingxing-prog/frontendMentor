@@ -40,8 +40,6 @@ fetch(myRequest)
            
             firstLine.appendChild(company);
             
-            
-            
             var position = document.createElement("p");
             position.innerHTML = info["position"];
             position.setAttribute("class", "position");
@@ -82,7 +80,13 @@ fetch(myRequest)
             table.appendChild(level);
 
             var languages = info["languages"];
-            for (var i=0; i<languages.length; i++){
+            table = getTools(languages, table);
+            var tools = info["tools"];
+            if(tools.length > 0){
+                table = getTools(tools, table);
+            }
+
+            /*for (var i=0; i<languages.length; i++){
                 var language = document.createElement("span");
                 language.textContent = languages[i];
                 language.setAttribute("class", "option");
@@ -97,17 +101,28 @@ fetch(myRequest)
                     tool.setAttribute("class", "option");
                     table.appendChild(tool);    
                 }
-            }
+            }*/
 
-            firstLine.appendChild(table);
 
 
         
             newElement.appendChild(firstLine);
+            newElement.appendChild(table);
             main.appendChild(newElement);
             
 
         }
     })
+
+function getTools(languages, table){
+    for (var i=0; i<languages.length; i++){
+        var language = document.createElement("span");
+        language.textContent = languages[i];
+        language.setAttribute("class", "option");
+        table.appendChild(language);
+    }
+
+    return table;
+}
 
    
