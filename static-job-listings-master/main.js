@@ -102,8 +102,6 @@ fetch(myRequest)
             firstLine.appendChild(table);
 
 
-
-
         
             newElement.appendChild(firstLine);
             main.appendChild(newElement);

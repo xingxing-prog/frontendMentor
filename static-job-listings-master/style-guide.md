@@ -27,6 +27,6 @@ The designs were created to the following widths:
 - Font size: 15px
 
 ### Headings
-
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+https://fonts.google.com/specimen/League+Spartan)
+- Family: [League Spartan](
 - Weights: 500, 700
