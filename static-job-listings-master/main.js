@@ -2,8 +2,9 @@ const main = document.querySelector('main');
 const myRequest = new Request('data.json');
 
 
+function initial(){
 
-fetch(myRequest)
+  fetch(myRequest)
     .then((response)=>response.json())
     .then((data)=>{
         for(var i=0; i < data.length; i++){
@@ -46,7 +47,9 @@ fetch(myRequest)
             firstLine.appendChild(position);
 
             var place = document.createElement("p");
-            var postedAt = document.createElement("span");
+            getTimeLocation(place, info);
+            firstLine.appendChild(place);
+            /*var postedAt = document.createElement("span");
             postedAt.textContent = info["postedAt"];
             postedAt.setAttribute("class","gray");
             var contract = document.createElement("span");
@@ -65,7 +68,7 @@ fetch(myRequest)
             place.appendChild(contract);
             place.appendChild(dot2);
             place.appendChild(location);
-            firstLine.appendChild(place);
+            firstLine.appendChild(place);*/
 
             var table = document.createElement("p");
             table.setAttribute("class", "table");
@@ -86,24 +89,6 @@ fetch(myRequest)
                 table = getTools(tools, table);
             }
 
-            /*for (var i=0; i<languages.length; i++){
-                var language = document.createElement("span");
-                language.textContent = languages[i];
-                language.setAttribute("class", "option");
-                table.appendChild(language);
-            }
-
-            var tools = info["tools"];
-            if(tools.length >0){
-                for(var j=0; j<tools.length; j++){
-                    var tool = document.createElement("span");
-                    tool.textContent = tools[j];
-                    tool.setAttribute("class", "option");
-                    table.appendChild(tool);    
-                }
-            }*/
-
-
 
         
             newElement.appendChild(firstLine);
@@ -113,6 +98,7 @@ fetch(myRequest)
 
         }
     })
+}
 
 function getTools(languages, table){
     for (var i=0; i<languages.length; i++){
@@ -123,6 +109,31 @@ function getTools(languages, table){
     }
 
     return table;
+}
+
+/*initial();*/
+
+function getTimeLocation(place, info){
+    var postedAt = document.createElement("span");
+    postedAt.textContent = info["postedAt"];
+    postedAt.setAttribute("class","gray");
+    var contract = document.createElement("span");
+    contract.textContent = info["contract"];
+    contract.setAttribute("class","gray");
+    var location = document.createElement("span");
+    location.textContent = info["location"];
+    location.setAttribute("class","gray");
+    var dot1 = document.createElement("span");
+    dot1.setAttribute("class", "dot");
+    var dot2 = document.createElement("span");
+    dot2.setAttribute("class", "dot");
+          
+    place.appendChild(postedAt);
+    place.appendChild(dot1);
+    place.appendChild(contract);
+    place.appendChild(dot2);
+    place.appendChild(location);
+
 }
 
    
