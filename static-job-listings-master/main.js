@@ -67,7 +67,7 @@ fetch(myRequest)
             place.appendChild(location);
             firstLine.appendChild(place);
 
-            var table = document.createElement("p");
+            var table = document.createElement("div");
             table.setAttribute("class", "table");
             var role = document.createElement("span");
             role.textContent = info["role"];
@@ -86,22 +86,7 @@ fetch(myRequest)
                 table = getTools(tools, table);
             }
 
-            /*for (var i=0; i<languages.length; i++){
-                var language = document.createElement("span");
-                language.textContent = languages[i];
-                language.setAttribute("class", "option");
-                table.appendChild(language);
-            }
-
-            var tools = info["tools"];
-            if(tools.length >0){
-                for(var j=0; j<tools.length; j++){
-                    var tool = document.createElement("span");
-                    tool.textContent = tools[j];
-                    tool.setAttribute("class", "option");
-                    table.appendChild(tool);    
-                }
-            }*/
+          
 
 
 
@@ -109,20 +94,55 @@ fetch(myRequest)
             newElement.appendChild(firstLine);
             newElement.appendChild(table);
             main.appendChild(newElement);
+
+       
             
+           
+
+        
 
         }
+
+        var options = document.querySelectorAll(".option");
+            var modal = document.querySelector(".modal");
+            var clear = document.querySelector(".clear");
+          
+            options.forEach((option)=>{
+                option.addEventListener("click", (e)=>{
+                       
+                       var content = document.createElement("span");
+                       content.innerHTML = e.target.innerText;
+                       content.setAttribute("class","option");
+                       /*const node = e.target;
+                       var content = node.cloneNode(true);*/
+                       
+                       modal.appendChild(content);
+                    
+
+                })})
+
+
     })
+
+function addOptions(modal, e){
+    var newElement = document.createElement("span");
+    newElement.textContent = e.target.innerText;
+    modal.appendChild(newElement);
+
+}
 
 function getTools(languages, table){
     for (var i=0; i<languages.length; i++){
         var language = document.createElement("span");
         language.textContent = languages[i];
         language.setAttribute("class", "option");
+        
         table.appendChild(language);
     }
 
     return table;
 }
+
+
 
    
