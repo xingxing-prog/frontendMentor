@@ -3,6 +3,8 @@ const myRequest = new Request('data.json');
 
 
 
+
+
 fetch(myRequest)
     .then((response)=>response.json())
     .then((data)=>{
@@ -71,7 +73,6 @@ fetch(myRequest)
 
         
 
-        
             newElement.appendChild(firstLine);
             newElement.appendChild(table);
             main.appendChild(newElement);
@@ -79,8 +80,8 @@ fetch(myRequest)
            
         
 
-        }
-
+        
+}
         var options = document.querySelectorAll(".option");
         var modal = document.querySelector(".modal");
         var clear = document.querySelector(".clear");
@@ -141,7 +142,8 @@ fetch(myRequest)
         clear.addEventListener("click", ()=>{
             optionList = [];
             modal.style.visibility = "hidden";
-            modal.removeAllChild;
+            var content = querySelectorAll(".modalOption");
+            
             
         })
 
