@@ -46,25 +46,8 @@ fetch(myRequest)
             firstLine.appendChild(position);
 
             var place = document.createElement("p");
-            var postedAt = document.createElement("span");
-            postedAt.textContent = info["postedAt"];
-            postedAt.setAttribute("class","gray");
-            var contract = document.createElement("span");
-            contract.textContent = info["contract"];
-            contract.setAttribute("class","gray");
-            var location = document.createElement("span");
-            location.textContent = info["location"];
-            location.setAttribute("class","gray");
-            var dot1 = document.createElement("span");
-            dot1.setAttribute("class", "dot");
-            var dot2 = document.createElement("span");
-            dot2.setAttribute("class", "dot");
-          
-            place.appendChild(postedAt);
-            place.appendChild(dot1);
-            place.appendChild(contract);
-            place.appendChild(dot2);
-            place.appendChild(location);
+           
+            getTimeLocation(place, info);
             firstLine.appendChild(place);
 
             var table = document.createElement("div");
@@ -86,50 +69,129 @@ fetch(myRequest)
                 table = getTools(tools, table);
             }
 
-          
-
-
+        
 
         
             newElement.appendChild(firstLine);
             newElement.appendChild(table);
             main.appendChild(newElement);
-
-       
-            
+          
            
-
         
 
         }
 
         var options = document.querySelectorAll(".option");
-            var modal = document.querySelector(".modal");
-            var clear = document.querySelector(".clear");
-          
+        var modal = document.querySelector(".modal");
+        var clear = document.querySelector(".clear");
+        var optionList = []; 
+        var jobs = document.querySelectorAll(".job");
+        console.log(jobs);
+
+       
+        
             options.forEach((option)=>{
                 option.addEventListener("click", (e)=>{
                        
-                       var content = document.createElement("span");
-                       content.innerHTML = e.target.innerText;
-                       content.setAttribute("class","option");
-                       /*const node = e.target;
-                       var content = node.cloneNode(true);*/
-                       
+                    if(!optionList.includes(e.target.textContent)){
+                        optionList.push(e.target.textContent);
+                        
+                        var content = document.createElement("span");
+                        content.innerHTML = e.target.innerText;
+                        
+                        var cancelButton = document.createElement("span");
+                        cancelButton.textContent = "X";
+                        cancelButton.setAttribute("class", "cancel");
+                        content.appendChild(cancelButton);
+
+                        content.setAttribute("class","modalOption");
+                      
+                        cancelButton.addEventListener("click", (e)=>{
+                        console.log(e.target.parentNode);
+                        var item = e.target.parentNode;
+                        var index = optionList.indexOf(item);
+                        optionList.splice(index);
+
+                        modal.removeChild(e.target.parentNode);
+
+                        if(optionList.length === 0){
+                            modal.style.visibility = "hidden";
+                        }
+                    })
                        modal.appendChild(content);
+
+                       console.log(optionList);
+
+                       if(optionList.length !== 0){
+                        modal.style.visibility = "visible";
+                       }
+                       else{
+                         modal.style.visibility = "hidden";
+                       }
+                    }
+                  
+                
+                     
+                
                     
 
-                })})
+                })
+            })
+
+        clear.addEventListener("click", ()=>{
+            optionList = [];
+            modal.style.visibility = "hidden";
+            modal.removeAllChild;
+            
+        })
+
+        data.filter(element=>{
+            var table = element["languages"];
+            table.push(...element["tools"]);
+            table.push(element["role"]);
+            table.push(element["level"]);
+            if(isInOptionList(table, optionList) !== true){
+                main.removeChild(element);
+            }
+        })
+
+
+
+       
+      
+
+        
+       
+       
 
 
     })
 
-function addOptions(modal, e){
-    var newElement = document.createElement("span");
-    newElement.textContent = e.target.innerText;
-    modal.appendChild(newElement);
+function getTimeLocation(place, info){
 
+    var postedAt = document.createElement("span");
+    postedAt.textContent = info["postedAt"];
+    postedAt.setAttribute("class","gray");
+    var contract = document.createElement("span");
+    contract.textContent = info["contract"];
+    contract.setAttribute("class","gray");
+    var location = document.createElement("span");
+    location.textContent = info["location"];
+    location.setAttribute("class","gray");
+    var dot1 = document.createElement("span");
+    dot1.setAttribute("class", "dot");
+    var dot2 = document.createElement("span");
+    dot2.setAttribute("class", "dot");
+          
+    place.appendChild(postedAt);
+    place.appendChild(dot1);
+    place.appendChild(contract);
+    place.appendChild(dot2);
+    place.appendChild(location);
 }
+
+
+
 
 function getTools(languages, table){
     for (var i=0; i<languages.length; i++){
@@ -142,6 +204,20 @@ function getTools(languages, table){
 
     return table;
 }
+
+function isInOptionList(elements, optionList){
+    for (var i=0; i <elements.length; i++){
+        if(elements[i].indexOf(optionList) < 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
+
+
 
 
 

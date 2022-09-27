@@ -6,7 +6,7 @@
  html, body{
   background-color:hsl(180, 52%, 96%);
   font-family:"League Spartan";
-  max-width:1440px;
+
   margin:0 auto;
  }
  
@@ -101,12 +101,13 @@
 
  .option{
      margin-left:1rem;
+     margin-right:1rem;
      background-color: hsl(180, 31%, 95%);
      padding:0.5rem 0.5rem;
-     border-radius:0.4rem;
+     border-radius:0.2rem;
      font-weight:700;
      color:hsl(180, 29%, 50%);
-     
+   
  }
 
  .modal{
@@ -124,4 +125,27 @@
    float:right;
    color:hsl(180, 29%, 50%);
    font-weight:700;
+ }
+
+ .cancel{
+   padding:0.5rem;
+   background-color:hsl(180, 29%, 50%);
+   margin-left:1rem;
+   border-top-right-radius:0.3rem;
+   border-bottom-right-radius:0.3rem;
+   color:#fff;
+   
+   
+ }
+
+ .modalOption{
+  margin-left:1rem; 
+  background-color: hsl(180, 31%, 95%);
+  padding:0.5rem 0.5rem;
+  border-radius:0.2rem;
+  font-weight:700;
+  color:hsl(180, 29%, 50%);
+  margin-right:0;
+  padding-right:0;
+   
  }
