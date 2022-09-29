@@ -43,7 +43,7 @@
     
  }
 
- .new, .feature{
+ .new, .featured{
     background-color:hsl(180, 29%, 50%);;
     text-transform:uppercase;
     color:#fff;
@@ -54,7 +54,7 @@
 
  }
 
- .feature{
+ .featured{
    background-color:hsl(180, 14%, 20%);
  }
 
@@ -111,20 +111,28 @@
  }
 
  .modal{
-    width:80%;
+    width: 82%;
     background-color:#fff;
     position:absolute;
     top:7.5rem;
-    padding:2rem;
+    padding:0;
+    margin:0;
+    padding:1rem;
     border-radius:0.4rem;
-    
-
+    display:none;
+  
  }
 
  .clear{
    float:right;
    color:hsl(180, 29%, 50%);
    font-weight:700;
+   margin-top:1rem;
+   margin-right:2rem;
+ }
+
+ .hidden{
+    display:none;
  }
 
  .cancel{
@@ -147,5 +155,11 @@
   color:hsl(180, 29%, 50%);
   margin-right:0;
   padding-right:0;
+   
+ }
+
+ .modal-content{
+  
+   padding:1rem;
    
  }
