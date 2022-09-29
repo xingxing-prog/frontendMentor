@@ -111,16 +111,7 @@
  }
 
  .modal{
-<<<<<<< HEAD
-    width:80%;
-    background-color:#fff;
-    position:absolute;
-    top:7.5rem;
-    padding:2rem;
-    border-radius:0.4rem;
-    
 
-=======
     width: 82%;
     background-color:#fff;
     position:absolute;
@@ -131,22 +122,19 @@
     border-radius:0.4rem;
     display:none;
   
->>>>>>> test
  }
 
  .clear{
    float:right;
    color:hsl(180, 29%, 50%);
    font-weight:700;
-<<<<<<< HEAD
-=======
    margin-top:1rem;
    margin-right:2rem;
  }
 
  .hidden{
     display:none;
->>>>>>> test
+
  }
 
  .cancel{
@@ -170,13 +158,12 @@
   margin-right:0;
   padding-right:0;
    
-<<<<<<< HEAD
-=======
+
+
  }
 
  .modal-content{
   
    padding:1rem;
-   
->>>>>>> test
+
  }

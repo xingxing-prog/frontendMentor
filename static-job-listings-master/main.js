@@ -162,7 +162,7 @@ function initial(data){
 
 
     for(var i=0; i < data.length; i++){
-        //console.log(data[i]);
+        console.log(data[i]);
         var info = data[i];
         const newElement = document.createElement('div');
         newElement.className = "job";
