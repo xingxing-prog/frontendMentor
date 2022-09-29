@@ -1,7 +1,7 @@
 const main = document.querySelector('main');
 const myRequest = new Request('data.json');
 
-
+getData();
 var optionList = []; 
 
 
