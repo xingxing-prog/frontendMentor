@@ -68,37 +68,21 @@ async function getData(){
             optionList.splice(index, 1);
 
             modalContent.removeChild(e.target.parentNode);
-            var previousOption = "";
-
-            if(optionList.length > 0){
-                 previousOption = optionList.pop();
-                 
-            }
+           
         
             var hiddenJobs = document.querySelectorAll(".hidden");
+            console.log(hiddenJobs);
+            var jobs = filterAllOption(optionList, hiddenJobs);
+            
+            //delete the option, it means the jobs filtered earlier should be recover in
+            //the previous option filter. 
+            //Therefore, filtered the deleted(hidden)jobs by the optionList except the 
+            //delete option.
 
-            //if the optionList is not empty, then get the last one of the optionList 
-            //if the hidden one which contains the last one. It means they are the jobs 
-          
-            //if delete the option, it means some hidden jobs should be recover. 
-            //they should be the jobs filtered by the previous option.
-
-            hiddenJobs.forEach((job)=>{
-                var table = job.querySelector(".table");
-                var tools = table.querySelectorAll(".option");
-                var find = false;
-                for (var tool of tools){
-                    if(tool.textContent == previousOption){
-                        find = true;
-                    }
-      
-                }
-
-                if(find == true){
-                    job.classList.remove("hidden");
-                }
-
+            jobs.forEach((job)=>{
+                job.classList.remove("hidden");
             })
+            
 
 
             if(modalContent.innerHTML == ""){
@@ -120,35 +104,44 @@ async function getData(){
         optionList = [];
         modalContent.innerHTML = "";
         modal.style.display = "none";
-        var jobs = document.querySelectorAll(".job");
-        jobs.forEach((job)=>job.classList.remove("hidden"));
+        //var jobs = document.querySelectorAll(".job");
+        //jobs.forEach((job)=>job.classList.remove("hidden"));
         
     })
 
 }) }
+
+function recoverHiddenJobs(hiddenJobs, option){
+    var jobs = [];
+    hiddenJobs.forEach((job)=>{
+        var table = job.querySelector(".table");
+        var tools = job.querySelectorAll(".option");
+        console.log(tools);
+        var find = false;
+        for (var tool of tools){
+             if(tool.textContent == option){
+                    find = true;
+                }
+      
+            }
+
+            if(find){
+                jobs.push(job);
+            }
+    })
+    return jobs;
+}
+
+function filterAllOption(optionList, HiddenJobs){
+    for(var i=0; i <optionList.length; i++){
+        HiddenJobs = recoverHiddenJobs(HiddenJobs, optionList[i]);
+    }
+    return HiddenJobs;
+}
+
    
 
 
-
-/*function filterJobs(data, optionList){
-    var filteredData = data;
-    Array.from(data).forEach((element)=>{
-        var table = element["languages"];
-        table.push(...element["tools"]);
-        table.push(element["role"]);
-        table.push(element["level"]);
-
-        if(!isInOptionList(table, optionList)){
-            var index = filteredData.indexOf(element);
-            filteredData.splice(index, 1);
-
-        }
-        
->>>>>>> test
-    })
-    return filteredData;
-
-}*/
 
 function addNode(modal, textContent, type, className){
     var clearButton = document.createElement(type);
