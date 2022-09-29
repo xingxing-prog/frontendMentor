@@ -233,31 +233,6 @@ function initial(data){
 }
 
 
-/*function getTimeLocation(place, info){
-
-    var postedAt = document.createElement("span");
-    postedAt.textContent = info["postedAt"];
-    postedAt.setAttribute("class","gray");
-    var contract = document.createElement("span");
-    contract.textContent = info["contract"];
-    contract.setAttribute("class","gray");
-    var location = document.createElement("span");
-    location.textContent = info["location"];
-    location.setAttribute("class","gray");
-    var dot1 = document.createElement("span");
-    dot1.setAttribute("class", "dot");
-    var dot2 = document.createElement("span");
-    dot2.setAttribute("class", "dot");
-          
-    place.appendChild(postedAt);
-    place.appendChild(dot1);
-    place.appendChild(contract);
-    place.appendChild(dot2);
-    place.appendChild(location);
-}*/
-
-
-
 
 function getTools(languages, table){
     for (var i=0; i<languages.length; i++){
