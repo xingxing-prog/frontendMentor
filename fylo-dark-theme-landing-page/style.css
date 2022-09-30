@@ -1,0 +1,52 @@
+body{
+    background-color:hsl(217, 28%, 15%);
+    color:#fff;
+}
+
+
+header{
+    background-color:hsl(217, 28%, 15%);
+    display:flex;
+    align-items:center;
+    color:white;
+    justify-content:space-between;
+    padding:3rem;
+}
+
+.top{
+    display:flex;
+    gap:4rem;
+    color:#fff;
+}
+
+li{
+    list-style: none;
+    
+}
+
+.selection{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:white;
+}
+
+.first{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+ 
+}
+
+h3{
+    width:45rem;
+
+}
+
+p{
+    width:45rem;
+}
+
+
+
+     
