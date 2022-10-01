@@ -1,16 +1,37 @@
 body{
     background-color:hsl(217, 28%, 15%);
     color:#fff;
+    font-size:15px;
+    max-width:1440px;
 }
 
 
-header{
+.navigation{
     background-color:hsl(217, 28%, 15%);
     display:flex;
     align-items:center;
     color:white;
     justify-content:space-between;
     padding:3rem;
+    font-family:"Raleway";
+
+}
+
+.first{
+    margin-top:1rem;
+    background-image:url("images/bg-curvy-desktop.svg");  
+    position:relative;
+    background-repeat:repeat-x;
+    background-position:-2rem 5rem;   
+}
+
+.introPicture{
+    margin-bottom:1rem;
+}
+
+main{
+    background-color:hsl(218, 28%, 13%);
+   
 }
 
 .top{
@@ -35,18 +56,105 @@ li{
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    text-align:center;
  
 }
 
-h3{
-    width:45rem;
+.introPicture{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
+.intro{
+    width:36rem;
+    
+}
+
+h1{
+    width:36rem;
+    font-family:"Raleway";
+    font-weight:700;
+    padding:0.5rem;
+    font-size:2rem;
+    line-height:3.5rem;
+    margin-bottom:0.5rem;
+}
+
+h1, h3, h4{
+    font-family:"Raleway"; 
+    font-weight:700;
 }
 
 p{
-    width:45rem;
+    font-family:"Open Sans";
+    color:#ddd;
+    font-size:15px;
+}
+
+.store{
+    font-family:"Open Sans";
+    width:30rem;
+    margin-left:0.5rem;
+    font-size:1rem;
+    line-height:2rem;
+    margin-bottom:2rem;
+}
+
+.start{
+    font-family:"Raleway";
+    font-size:1.2rem;
+    font-weight:600;
+    color:#fff;
+    background-image:linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border:none;
+    padding:1.2rem;
+    width:18rem;
+    border-radius:2rem;
+    margin-bottom:10rem;
+
+}
+
+.convenient{
+    
+    display:grid;
+    grid-template-columns:25rem 25rem;
+    grid-template-rows: 16rem 16rem;
+    justify-items:center;
+    justify-content:center;
+    row-gap: 5rem;
+    column-gap: 8rem;
+    
+    
+}
+
+.access{
+    width: 25rem;
+    text-align:center;
+    text-align:center;
+    align-self:center;
+    line-height:1.5rem;
+}
+
+h4{
+    font-size:1.2rem;
+}
+
+.productive{
+    display:flex;
+}
+
+.facebook{
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
+    border: 0.15rem solid #fff;
+
 }
 
 
 
      
+footer{
+    background-color: hsl(216, 53%, 9%);
+}
