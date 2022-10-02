@@ -31,6 +31,9 @@ body{
 
 main{
     background-color:hsl(218, 28%, 13%);
+    /*display:flex;
+    flex-direction:column;
+    justify-content:center;*/
    
 }
 
@@ -89,7 +92,8 @@ h1, h3, h4{
 p{
     font-family:"Open Sans";
     color:#ddd;
-    font-size:15px;
+    font-size:14px;
+    line-height:1.3rem;
 }
 
 .store{
@@ -124,6 +128,7 @@ p{
     justify-content:center;
     row-gap: 5rem;
     column-gap: 8rem;
+    margin-bottom:6rem;
     
     
 }
@@ -142,6 +147,11 @@ h4{
 
 .productive{
     display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5rem;
+    
+    
 }
 
 .facebook{
@@ -150,11 +160,117 @@ h4{
     border-radius:50%;
     border: 0.15rem solid #fff;
 
+
+}
+
+.description{
+
+    width:32rem;
+    line-height:1.5rem;
+}
+
+.link{
+    
+    color:hsl(198, 60%, 50%);
+    padding-bottom:0.2rem;
+    border-bottom:1px solid hsl(198, 60%, 50%);
+    width:28%;
+   
+  
+}
+
+.link>a{
+    text-decoration: none;
+    color:hsl(198, 60%, 50%);
 }
 
 
+.image{
+    vertical-align:middle;
+}
+
+.testimonial{
+    display:grid;
+    grid-template-columns: 22rem 22rem 22rem;
+    column-gap:3rem;
+    justify-content:center;
+    margin-top:9rem;
+    font-size:0.875rem;
+    
+    
+}
+
+.name{
+    font-family:"Raleway";
+    font-size:0.7rem;
+    font-weight:700;
+    color:#fff;
+   
+}
+
+.position{
+    font-size:0.5rem;
+    margin-top:-1rem;
+}
+
+.container{
+    background-color:hsl(219, 30%, 18%);
+    padding:1rem 2rem;
+    box-shadow: 0.8rem 0.1rem 0 0 hsl(217, 28%, 15%);
+    margin-bottom:22rem;
+    
+
+}
+
+.person{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-top:-0.6rem;
+    margin-bottom:0;
+
+}
+
+.profile{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+}
+
+.join{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:8rem;
+    background-color:hsl(217, 28%, 15%);
+    width:42rem;
+    text-align:center;
+    padding:0.5rem 6rem 2rem 6rem;
+    position:absolute;
+    top:168rem;
+    left:16rem;
+    border-radius:1rem;
+    
+}
+
+
+.email{
+    margin-top:1.5rem;
+}
+
+input{
+    width:28rem;
+    height:2rem;
+}
+
+button{
+    margin-left:2rem;
+    width:10rem;
+}
 
      
 footer{
+    
     background-color: hsl(216, 53%, 9%);
 }
