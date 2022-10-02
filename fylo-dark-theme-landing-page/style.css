@@ -5,6 +5,10 @@ body{
     max-width:1440px;
 }
 
+*{
+    box-sizing:border-box;
+}
+
 
 .navigation{
     background-color:hsl(217, 28%, 15%);
@@ -117,6 +121,11 @@ p{
     border-radius:2rem;
     margin-bottom:10rem;
 
+}
+
+.start:hover{
+    cursor:pointer;
+    background:hsl(176, 68%, 64%);
 }
 
 .convenient{
@@ -235,7 +244,7 @@ h4{
     align-items:center;
     margin-top:8rem;
     background-color:hsl(217, 28%, 15%);
-    width:43rem;
+    width:55rem;
     text-align:center;
     padding:0.5rem 6rem 2rem 6rem;
     position:absolute;
@@ -255,18 +264,21 @@ h4{
 }
 
 input{
-    width:26rem;
-    padding:1rem;
+    width:28rem;
+    padding:1rem 1.5rem;
     border-radius:2rem;
-    border:none;
+    border:1px solid #fff;
+    padding-left:2rem;
+   
     
 }
 
 input::placeholder{
-    opacity:0.5;
+    opacity:0.8;
+    padding-left:1.5rem;
 }
 
-button{
+.free{
     margin-left:2rem; 
     padding:1rem 2rem;
     border-radius:2rem;
@@ -275,6 +287,11 @@ button{
     color:#fff;
     font-weight:700;
     border:none;
+}
+
+.free:hover{
+    cursor:pointer;
+    background:hsl(176, 68%, 64%);
 }
 
      
@@ -345,6 +362,22 @@ a{
    font-family:"Open Sans";
 }
 
+a:hover{
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+}
+
+#left{
+    font-family:"Open Sans";
+    padding:0.5rem 0;
+    margin-left:-26rem;
+    color:hsl(0, 100%, 63%);
+    display:none;
+    filter:blur(0.8px);
+}
+
+
 .about>ul>li{
     padding:0.5rem;
 }
@@ -352,4 +385,8 @@ a{
 .social-icon{
     display:flex;
     gap:1rem;
+}
+
+.fault{
+    display: block;
 }
