@@ -174,7 +174,7 @@ h4{
     color:hsl(198, 60%, 50%);
     padding-bottom:0.2rem;
     border-bottom:1px solid hsl(198, 60%, 50%);
-    width:28%;
+    width:30.8%;
     
   
 }
@@ -300,13 +300,44 @@ footer{
     padding:15rem 6rem 6rem 6rem;
 }
 
+.icon{
+    height:1.8rem;
+    width:1.8rem;
+    border-radius:50%;
+    border: 0.1rem solid #fff;
+}
 .facebook{
     height:1.8rem;
     width:1.8rem;
     border-radius:50%;
     border: 0.1rem solid #fff;
+    background-image:url("images/facebook-svgrepo-com.svg");
+}
+.twitter{
 
+    background-image:url("images/twitter-svgrepo-com.svg");
+}
 
+.instagram{
+    background-image:url("images/instagram-svgrepo-com.svg");
+}
+
+.facebook:hover{
+    cursor:pointer;
+    background-image:url("images/facebookGreen.svg");
+    border: 0.1rem solid hsl(176, 68%, 64%);
+}
+
+.twitter:hover{
+    cursor:pointer;
+    background-image:url("images/twitterGreen.svg");
+    border: 0.1rem solid hsl(176, 68%, 64%);
+}
+
+.instagram:hover{
+    cursor:pointer;
+    background-image:url("images/instagramGreen.svg");
+    border: 0.1rem solid hsl(176, 68%, 64%);
 }
 
 .address{
@@ -387,6 +418,6 @@ a:hover{
     gap:1rem;
 }
 
-.fault{
-    display: block;
+.social-icon:hover{
+    cursor:pointer;
 }
