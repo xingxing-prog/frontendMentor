@@ -74,8 +74,8 @@ li{
 }
 
 .intro{
-    width:36rem;
-    
+    /*width:36rem;*/
+    margin-top:2rem;
 }
 
 h1{
@@ -196,6 +196,12 @@ h4{
     justify-content:center;
     margin-top:9rem;
     font-size:0.875rem;
+    padding-top:2.2rem;
+    background-image:url("images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position:8.5rem 0;
+
+  
     
     
 }
@@ -217,7 +223,7 @@ h4{
     background-color:hsl(219, 30%, 18%);
     padding:1rem 2rem;
     box-shadow: 0.8rem 0.1rem 0 0 hsl(217, 28%, 15%);
-    margin-bottom:22rem;
+    margin-bottom:24rem;
     
 
 }
@@ -248,7 +254,7 @@ h4{
     text-align:center;
     padding:0.5rem 6rem 2rem 6rem;
     position:absolute;
-    top:168rem;
+    top:180rem;
     left:16rem;
     border-radius:1rem;
     
@@ -297,7 +303,8 @@ input::placeholder{
      
 footer{
     background-color: hsl(216, 53%, 9%);
-    padding:15rem 6rem 6rem 6rem;
+    padding:14rem 6rem 2rem 6rem;
+    
 }
 
 .icon{
@@ -365,7 +372,7 @@ footer{
     font-size:14px;
     font-weight:400;
     color:#ddd;
-    /*vertical-align:middle;*/
+    vertical-align:middle;
 }
 
 span{
@@ -378,6 +385,7 @@ span{
     margin-top:2rem;
     align-items:start;
     gap:4rem;
+  
 }
 
 .about{
