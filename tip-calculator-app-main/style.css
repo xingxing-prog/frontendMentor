@@ -113,6 +113,11 @@ body{
     color:hsl(0, 0%, 100%);
 }
 
+.number:hover{
+    cursor:pointer;
+    background-color:hsl(168, 67%, 45%);
+}
+
 #custom{
     text-align:center;
     font-weight:700;
