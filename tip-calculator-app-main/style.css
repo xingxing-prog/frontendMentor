@@ -39,6 +39,7 @@ body{
 .bill:focus{
     outline: 2px solid hsl(172, 67%, 45%);
     border-radius:0.2rem;
+    cursor:pointer;
 }
 
 .people{
@@ -61,6 +62,7 @@ body{
 .people:focus{
     outline: 2px solid hsl(172, 67%, 45%);
     border-radius:0.2rem;
+    cursor:pointer;
 }
 
 .active{
@@ -144,11 +146,12 @@ body{
     color:hsl(183, 100%, 15%);
 }
 
-#custom:focus{
+#custom:focus, #custom:hover{
     
     outline: 2px solid hsl(172, 67%, 45%);
     border-radius:0.2rem;
     color:hsl(183, 100%, 15%);
+    cursor:pointer;
 }
 
 
@@ -220,5 +223,6 @@ body{
 
 .reset:hover{
     background:hsl(172, 67%, 45%);
+    cursor:pointer;
 
 }

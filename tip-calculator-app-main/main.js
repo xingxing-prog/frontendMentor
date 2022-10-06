@@ -26,8 +26,10 @@ people.addEventListener("input", ()=>{
    
     people.style.color ="hsl(183, 100%, 15%)";
     numberOfPeople = parseInt(people.value);
-    
+   
     getTipAndTotal(numberOfPeople);
+    
+     
 
 })
 
