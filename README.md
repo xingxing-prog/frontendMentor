@@ -9,6 +9,6 @@ I want to organize the projects I have made from frontMentor
 | HTML/CSS/JS   | Notifications page  | [live](https://notifications-using-flex.netlify.app/)  | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/Notifications-Page)   |  Junior             |
 | HTML/CSS/JS  | static-job-listings  | [live](https://static-job-list-filter.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/static-job-listings-master) | intermediate  | 
 | HTML/CSS/JS  | fylo-dark-theme-landing-page | [live](https://fylo-theme-page.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/fylo-dark-theme-landing-page) |   Junior      |
-| Content Cell  | Content Cell  |
+| HTML/CSS/JS  | tip-calculator  |  [live](https://tip-calculator-page.netlify.app/)  | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/tip-calculator-app-main) | Junior    |
 | Content Cell  | Content Cell  |
 
