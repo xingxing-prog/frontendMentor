@@ -65,12 +65,6 @@ body{
     cursor:pointer;
 }
 
-.active{
-    background-color:hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
-}
-
-
 
 
 .container{
@@ -122,15 +116,23 @@ body{
     font-family:"Space Mono";
 }
 
-.number:hover{
-    cursor:pointer;
-    background-color:hsl(168, 67%, 45%);
-}
-
-.number:focus{
+.active{
     background-color:hsl(172, 67%, 45%);
     color:hsl(183, 100%, 15%);
 }
+
+
+
+
+/*.number:hover{
+    cursor:pointer;
+    background-color:hsl(168, 67%, 45%);
+}*/
+
+/*.number:focus{
+    background-color:hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}*/
 
 #custom{
     text-align:center;
