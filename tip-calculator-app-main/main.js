@@ -36,9 +36,6 @@ people.addEventListener("input", ()=>{
      
     }
     
-    
-     
-
 })
 
 rates.forEach((rate)=>{
@@ -143,10 +140,8 @@ function resetTipTotal(){
     total.innerHTML = "0.00";
 }
 
-function initial(){
-    window.location.reload();
-}
+
 reset.addEventListener("click", ()=>{
-    initial();
+    location.reload();
 })
 
