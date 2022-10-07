@@ -1,0 +1,93 @@
+
+html, body, main{
+    background-color:hsl(204, 43%, 93%);
+    height:100vh;
+}
+
+main{
+    max-width:375px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    font-family:"Karla";
+    font-size:1rem;
+    
+}
+
+section{
+    width:75%;
+    padding:0.6rem 1.7rem;
+    box-shadow: 1px 10px 15px -3px  #fff;
+   
+}
+
+.join{
+    background-color:#fff;
+    color:hsl(218, 22%, 67%);
+    line-height:1.8rem;
+    
+}
+
+
+
+#community{
+    color:hsl(179, 62%, 43%);
+   
+}
+
+.subscription{
+    background-color:hsl(179, 62%, 43%);
+    font-family:inherit;
+    color:#fff;
+}
+
+
+
+#per{
+    color:#fff;
+    opacity:0.7;
+    font-weight:400;
+}
+
+#dollar{
+    font-size:30px;
+    font-weight:700;
+}
+
+button{
+    width:100%;
+    padding:0.8rem;
+    background-color:hsl(71, 73%, 54%);
+    border:none;
+    border-radius:0.2rem;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    color:#fff;
+    font-family:inherit;
+    font-weight:700;
+    font-size:1rem;
+}
+
+.why{
+    background-color:hsl(179, 60%, 53%);
+    color:hsl(204, 43%, 93%);
+    line-height:1.5rem;
+}
+
+@media only screen and (min-width:600px) {
+    .join{
+        width: 50%;
+    }
+
+    .subscription{
+        width:25%;
+    }
+
+    .why{
+        width:25%;
+    }
+
+
+}
