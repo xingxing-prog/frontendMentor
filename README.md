@@ -11,5 +11,5 @@ I want to organize the projects I have made from frontMentor
 | HTML/CSS/JS  | fylo-dark-theme-landing-page | [live](https://fylo-theme-page.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/fylo-dark-theme-landing-page) |   Junior      |
 | HTML/CSS/JS  | tip-calculator  |  [live](https://tip-calulator-interface.netlify.app/)  | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/tip-calculator-app-main) | Junior    |
 | HTML/CSS  | single-price-grid-component  | [live](https://responsive-sigle-price.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/single-price-grid-component) |    Newbie      
- | HTML/CSS/JS  |  pricing-component-with-toggle-master  |  [live](https://price-component-toggle.netlify.app/ | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/pricing-component-with-toggle-master) | Junior |
+ | HTML/CSS/JS  |  pricing-component-with-toggle-master  |  [live](https://price-component-toggle.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/pricing-component-with-toggle-master) | Junior |
 
