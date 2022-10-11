@@ -206,20 +206,30 @@ ul{
     justify-content:center;
     align-items:center;
     margin-top:-3.5rem;
+   
+   
+}
+
+.hr{
+    width:100%;
+    /*margin-left:-3.2rem;*/
+    /*background-color:#ddd;*/
+    border:none;
+    
+    border-top: 0.5px solid #ddd;
+    border-bottom:0.5px solid #ddd;
+    border-collapse:collapse;
+    
+}
+li{
+   padding:0.8rem;
+   text-align:center;
     
 }
 
-hr{
-    width:170%;
-    margin-left:-3.2rem;
-    background-color:#ddd;
-    border:none;
-    height:0.5px;
 
-}
-li{
-   padding:0.5rem;
-}
+
+
 
 button{
     width:100%;
