@@ -13,4 +13,4 @@ I want to organize the projects I have made from frontMentor
 | HTML/CSS  | single-price-grid-component  | [live](https://responsive-sigle-price.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/single-price-grid-component) |    Newbie      
  | HTML/CSS/JS  |  pricing-component-with-toggle-master  |  [live](https://price-component-toggle.netlify.app/) | [code](https://github.com/xingxing-prog/frontendMentor/tree/main/pricing-component-with-toggle-master) | Junior |
 
-|  HTML/CSS | product-preview-card-component |[live](https://perfume-preview.netlify.app/)|[code](https://github.com/xingxing-prog/frontendMentor/tree/main/product-preview-card-component-master)|    Newbie    |                          |
+|  HTML/CSS | product-preview-card-component |[live](https://perfume-preview.netlify.app/)|[code](https://github.com/xingxing-prog/frontendMentor/tree/main/product-preview-card-component-master)|    Newbie    |                          
