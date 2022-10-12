@@ -1,0 +1,145 @@
+html, body{
+    margin:2rem auto;
+    background-color:hsl(30, 38%, 92%);
+    margin-bottom:0;
+    height:100vh;
+    
+    
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.perfume{
+    width:100%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-top-left-radius:0.6rem;
+    border-top-right-radius:0.6rem;
+    
+
+}
+
+main{
+
+    width:90%;
+    margin:10% auto;
+    
+}
+
+section{
+    background-color:hsl(0, 0%, 100%);
+    padding:0.5rem 1.5rem;
+    border-bottom-left-radius:0.6rem;
+    border-bottom-right-radius:0.6rem;
+    
+
+}
+
+.thin{
+    letter-spacing:0.2rem;
+    text-transform: uppercase;
+    font-family:'MontSerrat';
+    color:hsl(228, 12%, 48%);
+    font-size:14px;
+    margin-top:1rem;
+   
+}
+
+h1{
+    font-family:"Fraunces";
+    font-size:30px;
+    margin-top:-0.4rem;
+    color:hsl(212, 21%, 14%);
+    
+}
+
+.brief{
+    font-size:14px;
+    font-family:'MontSerrat';
+    line-height:1.5rem;
+    color:hsl(228, 12%, 48%);
+}
+
+.price{
+    display:flex;
+    gap:2rem;
+    align-items:center;
+    margin-top:-1.3rem;
+}
+
+.currentPrice{
+    font-family:"Fraunces";
+    font-size:32px;
+    color:hsl(158, 36%, 37%);
+    font-weight:700;
+}
+
+.originalPrice{
+    font-family:"Montserrat";
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    
+}
+
+button{
+    width:100%;
+    padding:0.8rem;
+    background:hsl(158, 36%, 37%);
+    border:none;
+    color:hsl(0, 0%, 100%);
+    margin-bottom:1.2rem;
+    margin-top:-0.4rem;
+    font-weight:600;
+    font-family:"Montserrat";
+    border-radius:0.5rem;   
+
+}
+
+button:hover{
+    cursor:pointer;
+    background:hsl(212, 21%, 14%);
+}
+
+.add{
+    margin-left:1rem;
+    vertical-align:middle;
+}
+.cart{
+    vertical-align:middle;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .perfume{
+        content:url("images/image-product-desktop.jpg");
+        width:100%;
+        border-bottom-left-radius:0.6rem;
+        border-top-right-radius:0;
+        max-width:297.66px;
+    }
+
+    section{
+       max-width:300px;
+       border-top-right-radius:0.6rem;
+       border-bottom-left-radius:0;
+       
+       
+    }
+
+    button{
+        margin-bottom:1.5rem;
+    }
+
+
+}
+
+
+
