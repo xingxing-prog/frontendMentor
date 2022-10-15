@@ -16,9 +16,11 @@
 <body>
    <main>
       
-      <div class="image">
-        <img src="images/image-product-mobile.jpg" alt="perfume" class="perfume">
-       </div> 
+      <picture>
+         <source media="(max-width:600px)" srcset="images/image-product-mobile.jpg">   
+         <img src="images/image-product-desktop.jpg" alt="perfume" style="height:445px">
+      </picture>
+       
        <section> 
        <p class="thin">perfume</p>
        <h1>Gabrielle Essence Eau De Parfum</h1>
