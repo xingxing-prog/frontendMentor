@@ -1,17 +1,15 @@
 
-
 body{
-    margin:auto;
     font-family:"Inter";
-    
+    background-image:url("images/pattern-curve.svg");
+    background-position: 30% 110%;
+    background-repeat: no-repeat;
 }
-
-
 .person{
     max-width:85%;
     min-width:200px;
     position:sticky;
-   
+    border-radius:0.5rem;
     
 }
 
@@ -20,6 +18,7 @@ body{
     background-image:url("images/pattern-bg.svg");
     background-size:100%;
     /*background-size:25rem;*/
+    background-position:50% 50%;
     background-repeat: no-repeat;
     padding:2rem 1rem;
     display:flex;
@@ -55,12 +54,14 @@ button{
     color:hsl(240, 38%, 20%);
 }
 
-p{
+.testimonial{
     text-align:center;
 }
 
+
 .who{
     margin-top:-2rem;
+    margin-bottom:5rem;
 }
 
 .name{
@@ -70,4 +71,75 @@ p{
 
 .job{
     color:hsl(240, 18%, 77%);
+    margin-bottom:2rem;
 }
+
+@media screen and (min-width: 600px){
+
+    html, body, main{
+        height:100vh;
+        max-width:1440px;
+    }
+
+    body{
+        
+        font-family:"Inter";
+        background-image:url("images/pattern-curve.svg"), url("images/pattern-bg.svg");
+       
+        background-repeat:no-repeat;
+        background-position:left bottom, right ;
+    }
+    
+    .profile{
+        width:600px;
+        background-image:none;
+    }
+
+    .person{
+        width: 540px;
+        border-radius:0.5rem;
+        position:sticky;
+    }
+    main{
+        display:flex;
+       
+        flex-direction:row-reverse;
+        justify-content:end;
+        align-items:center;
+        font-size:32px;
+        padding-left:5rem;
+        
+    }
+
+    .advice{
+        width:650px;
+        line-height:2.8rem;
+        font-size:inherit;
+        text-align:left;
+    }
+
+    .testimonial{
+        position:absolute;
+        margin-left:2rem;
+        left:10rem;
+        top:10rem;
+        text-align:center;
+    }
+
+    p{
+        text-align:left;
+    }
+
+    .who{
+        margin-top: 2rem;
+        display:flex;
+        gap:0.5rem;
+        padding-left:2rem;
+    }
+
+    .name, .job{
+        font-size:25px;
+    }
+    
+}
+

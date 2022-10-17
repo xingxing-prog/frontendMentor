@@ -41,4 +41,5 @@ button.addEventListener("click", (e)=>{
     personName.textContent = item.name;
     job.textContent = item.job;
 
-})
+});
+
