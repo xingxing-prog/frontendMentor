@@ -86,7 +86,9 @@ button{
         background-image:url("images/pattern-curve.svg"), url("images/pattern-bg.svg");
        
         background-repeat:no-repeat;
-        background-position:left bottom, right ;
+        background-position:left bottom, right;
+        padding:0;
+        margin:0;
     }
     
     .profile{
@@ -101,7 +103,8 @@ button{
     }
     main{
         display:flex;
-       
+        flex-basis: 80%;
+        max-width: 1440px;
         flex-direction:row-reverse;
         justify-content:end;
         align-items:center;
