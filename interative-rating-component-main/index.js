@@ -16,14 +16,21 @@ function getReviewed(){
     
 }
 
+function getScore(){
+    scores.forEach((score)=>{
+        if(score.classList.contains("white"))
+           score.classList.toggle("white");
+    })
+}
 
-    
-    for (let i=0; i<scores.length; i++){
-        
-        scores[i].addEventListener('click', ()=>
-        {
-            result.textContent ='You selected '+scores[i].value+ ' out of 5';
 
-        });
-    }
+scores.forEach((score)=>{
+
+    score.addEventListener("click", ()=>{
+        getScore();
+        score.classList.toggle("white");
+        result.textContent ='You selected '+score.value+ ' out of 5';
+    });
+})
+       
     

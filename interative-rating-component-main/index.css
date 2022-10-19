@@ -49,6 +49,10 @@ h1{
     color:white;
 }
 
+.white{
+    background:white;
+}
+
 #page1{
     display:flex;
     align-items:flex-start;

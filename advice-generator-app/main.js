@@ -18,21 +18,6 @@ const getAdvice = async() =>{
         
 }
 
-/*function getRandomNumber(){
-    return Math.floor(Math.random()*224+1);
-}
-
-getAdvice(url);
-
-
-dice.addEventListener('click', ()=>{
-    const n = getRandomNumber();
-    console.log(n);
-    var baseUrl = "https://api.adviceslip.com/advice";
-    var url = baseUrl + "/"+n;
-    console.log(url);
-    getAdvice(url);
-});*/
 
 getAdvice();
 
@@ -40,31 +25,6 @@ dice.addEventListener('click', ()=>{
    
     getAdvice();
 })
-
-
-
-
-       
-        
-    
-
-    //url ="https://api.adviceslip.com/advice";
-    
-    
-    /*axios.get(url).then(response=>{
-        let value = response.data;
-        
-        number.innerHTML = value['slip']['id'];
-    
-        p.innerHTML = '\u201c' + value['slip']['advice'] + '\u201d';
-        console.log(value['slip']['advice']);
-    })
-     .catch((error)=>{
-        console.log(error);
-     })*/
-
-
-//getAdvice();
 
 
 
