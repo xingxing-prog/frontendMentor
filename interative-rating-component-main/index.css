@@ -1,0 +1,142 @@
+
+html, body{
+    height:100%;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /*flex-direction:column;*/
+    font-family:'Overpass';
+    font-size:15px;
+    background-color:hsl(216, 12%, 8%);
+     
+    
+}
+
+.circle{
+    border-radius:50%;
+    border:1px solid hsl(213, 19%, 18%);
+    width:48px;
+    height:48px;
+    box-shadow:2px 4px 16px rgba(0,0,0,.2);
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    font-size:15px;  
+
+}
+
+button{
+    background-color: hsl(216, 12%, 54%);
+}
+
+h1{
+    color:white;
+    margin-bottom:0;
+}
+
+.numbers{
+    display:flex;
+    align-items:space-between;
+    gap:25px;
+}
+
+.circle:hover{
+    background:hsl(25, 97%, 53%);
+    cursor:pointer;
+    color:white;
+}
+
+#page1{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    width:330px;
+    height:330px;
+    padding:10px 30px;
+    flex-wrap:wrap;
+    border-radius:22px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    color:hsl(217, 12%, 63%);
+    background: hsl(213, 19%, 18%);
+    position:relative;
+    /*display:none;*/
+    
+}
+
+
+#submitBtn{
+    display:flex;
+    font-size:14px;
+    justify-content:center;
+    align-items:center;
+    width:320px;
+    height:40px;
+    padding:6px;
+    margin-top:20px;
+    border-radius:25px;
+    background:hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+    box-shadow: rgba(0,0,0,.1);
+}
+
+#submitBtn:hover{
+    cursor:pointer;
+    background-color:white;
+    color:hsl(25, 97%, 53%);
+
+}
+
+footer{
+    visibility:hidden;
+}
+
+#page2{
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:345px;
+    height:350px;
+    padding:25px;
+    flex-wrap:wrap;
+    border-radius:22px;
+    color:hsl(217, 12%, 63%);
+    background: hsl(213, 19%, 18%);
+    position:relative;
+    display:none;
+    
+}
+
+ #result{
+    margin-top:25px;
+    border-radius:20px;
+    box-shadow: 2px 4px 16px rgba(7, 7, 7, 0.4);
+    width:200px;
+    height:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:hsl(25, 97%, 53%);
+
+    
+}
+
+#thank{
+    font-size:20px;
+    color:hsl(0, 0%, 100%);
+    text-align:center;
+    margin-bottom:0;
+}
+
+#words{
+    text-align:center;
+     
+}
+
+
+
