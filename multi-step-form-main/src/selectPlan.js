@@ -76,9 +76,10 @@ const plan = ()=>{
     left.textContent = "Monthly";
     left.setAttribute("class", "left");
     toggleSwitch.appendChild(left);
-    const input = document.createElement("input");
-    input.setAttribute("type", "checkbox");
-    input.id = "switch";
+    const inputCheck = document.createElement("input");
+    inputCheck.type = "checkbox";
+    inputCheck.id = "switch";
+    toggleSwitch.appendChild(inputCheck);
     const labelInput = document.createElement("label");
     labelInput.htmlFor = "switch";
     labelInput.textContent = "Toggle";
@@ -90,6 +91,22 @@ const plan = ()=>{
     toggle.appendChild(toggleSwitch);
 
     main.appendChild(toggle);
+
+    const buttons = document.createElement("div");
+
+    const goBack = document.createElement("div");
+    goBack.innerHTML = "Go Back";
+    goBack.setAttribute("class", "goBack");
+    buttons.appendChild(goBack);
+   
+
+    const button = document.createElement("button");
+    button.setAttribute("class", "next");
+    button.innerHTML = "Next Step";
+    button.setAttribute("type", "submit");
+    buttons.appendChild(button);
+
+    main.appendChild(buttons);
 
     return main;
 }
