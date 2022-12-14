@@ -2,7 +2,7 @@
 @font-face{
     font-family: "Ubuntu";
     src:url('./assets/fonts/Ubuntu-Regular.ttf');
-    font-weight:500;
+    font-weight:700;
     font-style:normal;
 }
 
@@ -13,6 +13,7 @@ body{
     align-items:center;
     justify-content:center;*/
     font-family:"Ubuntu";
+    font-weight:600px;
 }
 
 *{
@@ -50,8 +51,11 @@ body{
 
 .step{
     text-transform: uppercase;
+    font-size:14px;
+    opacity:0.6;
 }
 
 .content{
     text-transform: uppercase;
+    font-size:15px;
 }
