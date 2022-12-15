@@ -77,10 +77,12 @@ const plan = ()=>{
     left.setAttribute("class", "left");
     toggleSwitch.appendChild(left);
     const inputCheck = document.createElement("input");
+    inputCheck.setAttribute("class", "inputCheck");
     inputCheck.type = "checkbox";
     inputCheck.id = "switch";
     toggleSwitch.appendChild(inputCheck);
     const labelInput = document.createElement("label");
+    labelInput.setAttribute("class", "labelInput");
     labelInput.htmlFor = "switch";
     labelInput.textContent = "Toggle";
     toggleSwitch.appendChild(labelInput);
