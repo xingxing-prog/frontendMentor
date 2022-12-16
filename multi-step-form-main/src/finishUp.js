@@ -13,7 +13,6 @@ const result = ()=>{
     main.appendChild(sub);
 
     
-
     let planChoice = document.createElement("div");
 
     const plan = document.createElement("div");
@@ -87,16 +86,16 @@ const result = ()=>{
    
 
     const button = document.createElement("button");
-    button.setAttribute("class", "next");
-    button.innerHTML = "Next Step";
+    button.setAttribute("class", "confirm");
+    button.innerHTML = "Confirm";
     button.setAttribute("type", "submit");
     buttons.appendChild(button);
    
-    main.appendChild(form);
+  
     main.appendChild(buttons);
 
     return main;
 
 }
 
-export default finishUp;
+export default result;

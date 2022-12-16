@@ -4,6 +4,7 @@ import info from "./personalInfo.js";
 import plan from "./selectPlan.js";
 import addOn from "./addOns.js";
 import finish from "./finishUp.js";
+import thank from "./thankYou.js";
 
 function component(){
     const element = document.createElement("div");
@@ -11,7 +12,9 @@ function component(){
     //element.appendChild(info());
     //element.appendChild(plan());
     //element.appendChild(addOn());
-    element.appendChild(finish());
+    //element.appendChild(finish());
+    element.appendChild(thank());
+
     
     return element;
 }
