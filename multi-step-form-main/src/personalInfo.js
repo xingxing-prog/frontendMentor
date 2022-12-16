@@ -1,4 +1,5 @@
 
+
 const infoContent =()=>{
     const info = document.createElement("div");
 

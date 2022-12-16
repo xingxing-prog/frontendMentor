@@ -9,15 +9,15 @@ import thank from "./thankYou.js";
 function component(){
     const element = document.createElement("div");
     
-    //element.appendChild(info());
+    element.appendChild(info());
     //element.appendChild(plan());
     //element.appendChild(addOn());
     //element.appendChild(finish());
-    element.appendChild(thank());
+    //element.appendChild(thank());
 
     
     return element;
 }
 
-const main = document.querySelector(".main");
+const main = document.querySelector(".mainContent");
 main.appendChild(component());
