@@ -25,6 +25,7 @@ const infoContent =()=>{
 
 
     const labelName = document.createElement("label");
+    labelName.setAttribute("class", "label");
     labelName.htmlFor = "name"
     labelName.innerHTML = "Name";
     form.appendChild(labelName);
@@ -41,6 +42,7 @@ const infoContent =()=>{
 
 
     const labelEmail = document.createElement("label");
+    labelName.setAttribute("class", "label");
     labelEmail.htmlFor = "email";
     labelEmail.innerHTML = "Email Address";
     form.appendChild(labelEmail);
@@ -57,6 +59,7 @@ const infoContent =()=>{
     const labelPhone = document.createElement("label");
     labelPhone.htmlFor = "phone";
     labelPhone.innerHTML = "Phone Number";
+    labelName.setAttribute("class", "label");
     form.appendChild(labelPhone);
     form.appendChild(document.createElement("br"));
 

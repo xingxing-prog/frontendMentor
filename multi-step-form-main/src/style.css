@@ -48,7 +48,7 @@ body{
 
 .main{
     display:flex;
-    gap:2rem;
+    gap:5rem;
     align-items:center;
     justify-content:center;
     background-color:#fff;
@@ -168,7 +168,28 @@ body{
     font-family:"Ubuntu";
     font-size:36px;
     font-weight:bold;
+    margin-bottom:0.8rem;
 }
+
+.sub{
+    font-size:16px;
+    color:hsl(231, 11%, 63%);
+    font-weight:400;
+    
+}
+
+.formContact{
+    font-family:inherit;
+    font-size:16px;
+    margin-top:3rem;
+}
+
+.label{
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+
+
 
 
 /*personal file*/
