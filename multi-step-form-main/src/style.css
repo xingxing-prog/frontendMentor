@@ -48,7 +48,7 @@ body{
 
 .main{
     display:flex;
-    gap:5rem;
+    gap:6rem;
     align-items:center;
     justify-content:center;
     background-color:#fff;
@@ -56,6 +56,7 @@ body{
     height:auto;
     min-height:568px;
     max-height:100vh;
+    border-radius:0.8rem;
        
 }
 
@@ -72,9 +73,10 @@ body{
 
 .item{
 
-    padding:30px;
+    /*padding:20px;*/
     display:flex;
     gap:1rem;
+    margin:2.5rem 2rem;
 
 }
 
@@ -100,6 +102,7 @@ body{
 .content{
     text-transform: uppercase;
     font-size:15px;
+    font-weight:500;
 }
 
 /* to create toggle switch*/
@@ -181,15 +184,68 @@ body{
 .formContact{
     font-family:inherit;
     font-size:16px;
-    margin-top:3rem;
+    margin-top:1.6rem;
 }
 
-.label{
-    margin-top:2rem;
+.label{ 
     margin-bottom:1rem;
 }
 
 
+.email{
+    height:2rem;
+    width:26rem;
+    border:1px solid hsl(229, 24%, 87%);
+    border-radius:0.5rem;
+    padding:0.4rem 1rem;
+    margin-top:0.5rem;
+    color:hsl(213, 96%, 18%);
+    font-family:inherit;
+    font-weight:700;
+    font-size:16px;
+   
+}
 
+.email:active{
+    outline:1px solid hsl(243, 100%, 62%);
+    font-weight:700;
+    font-size:16px;
+    color:hsl(213, 96%, 18%);
+}
+
+.email:hover{
+    cursor:pointer;
+}
+
+.info{
+    margin-right:6rem;
+}
+
+.nameContent{
+    margin-bottom:1.5rem;
+}
+
+.next{
+    margin-top:4rem;
+    float:right;
+    color:#fff;
+    font-family:inherit;
+    padding:0.8rem 1.2rem;
+    background:hsl(213, 96%, 18%);
+    font-weight:400;
+    font-size:16px;
+    border-radius:0.5rem;
+}
+
+.next:hover{
+    cursor:pointer;
+}
 
 /*personal file*/
+
+/*selectPlan */
+
+
+
+
+/*selectPlan */

@@ -5,6 +5,7 @@ import pro from "./assets/images/icon-pro.svg";
 const plan = ()=>{
 
     const main = document.createElement("div");
+    
 
     const h3 = document.createElement("h3");
     h3.setAttribute("class", "h3");
@@ -103,7 +104,7 @@ const plan = ()=>{
    
 
     const button = document.createElement("button");
-    button.setAttribute("class", "next");
+    button.setAttribute("class", "nextButton");
     button.innerHTML = "Next Step";
     button.setAttribute("type", "submit");
     buttons.appendChild(button);

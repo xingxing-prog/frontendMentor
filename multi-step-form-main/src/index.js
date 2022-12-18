@@ -9,8 +9,8 @@ import thank from "./thankYou.js";
 function component(){
     const element = document.createElement("div");
     
-    element.appendChild(info());
-    //element.appendChild(plan());
+    //element.appendChild(info());
+    element.appendChild(plan());
     //element.appendChild(addOn());
     //element.appendChild(finish());
     //element.appendChild(thank());

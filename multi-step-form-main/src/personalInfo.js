@@ -2,6 +2,7 @@
 
 const infoContent =()=>{
     const info = document.createElement("div");
+    info.setAttribute("class", "info");
 
     const h3 = document.createElement("h3");
     h3.setAttribute("class", "personal");
@@ -16,6 +17,7 @@ const infoContent =()=>{
 
     info.appendChild(sub);
     info.appendChild(document.createElement("br"));
+    
   
 
     const form = document.createElement("form");
@@ -23,54 +25,67 @@ const infoContent =()=>{
     form.id = "contact";
     
 
-
+    const nameContent = document.createElement("div");
+    nameContent.setAttribute("class", "nameContent");
     const labelName = document.createElement("label");
     labelName.setAttribute("class", "label");
     labelName.htmlFor = "name"
     labelName.innerHTML = "Name";
-    form.appendChild(labelName);
-    form.appendChild(document.createElement("br"));
+    nameContent.appendChild(labelName);
+    nameContent.appendChild(document.createElement("br"));
 
     const nameInput = document.createElement("input");
     nameInput.id = "name";
     nameInput.setAttribute("type", "text");
     nameInput.setAttribute("name", "name");
+    nameInput.setAttribute("class", "email");
     nameInput.placeholder = "e.g. Stephen King";
     nameInput.setAttribute("required", "");
-    form.appendChild(nameInput);
-    form.appendChild(document.createElement("br"));
+    nameContent.appendChild(nameInput);
+    nameContent.appendChild(document.createElement("br"));
+    form.appendChild(nameContent);
+   
 
-
+    const emailContent = document.createElement("div");
+    emailContent.setAttribute("class", "nameContent");
     const labelEmail = document.createElement("label");
     labelName.setAttribute("class", "label");
     labelEmail.htmlFor = "email";
     labelEmail.innerHTML = "Email Address";
-    form.appendChild(labelEmail);
-    form.appendChild(document.createElement("br"));
+    emailContent.appendChild(labelEmail);
+    emailContent.appendChild(document.createElement("br"));
 
     const emailInput = document.createElement("input");
     emailInput.setAttribute("type", "email");
     emailInput.setAttribute("name", "email");
+    emailInput.setAttribute("class", "email");
     emailInput.placeholder = "e.g. stephenking@lorem.com";
     emailInput.setAttribute("required", "");
-    form.appendChild(emailInput);
-    form.appendChild(document.createElement("br"));
+    emailContent.appendChild(emailInput);
+    emailContent.appendChild(document.createElement("br"));
+    form.appendChild(emailContent);
+ 
 
+    const phoneContent = document.createElement("div");
+    phoneContent.setAttribute("class", "nameContent");
     const labelPhone = document.createElement("label");
     labelPhone.htmlFor = "phone";
     labelPhone.innerHTML = "Phone Number";
     labelName.setAttribute("class", "label");
-    form.appendChild(labelPhone);
-    form.appendChild(document.createElement("br"));
+    phoneContent.appendChild(labelPhone);
+    phoneContent.appendChild(document.createElement("br"));
+    
 
     const phoneInput = document.createElement("input");
     phoneInput.setAttribute("type", "tel");
     phoneInput.setAttribute("name", "phone");
+    phoneInput.setAttribute("class", "email");
     phoneInput.placeholder = "e.g. +1 234 567 890";
     phoneInput.setAttribute("required", "");
-    form.appendChild(phoneInput);
-    form.appendChild(document.createElement("br"));
-
+    phoneInput.pattern = "[0-9]{1,2} [0-9]{3} [0-9]{3} [0-9]{3}";
+    phoneContent.appendChild(phoneInput);
+    phoneContent.appendChild(document.createElement("br"));
+    form.appendChild(phoneContent);
 
 
     const button = document.createElement("button");
