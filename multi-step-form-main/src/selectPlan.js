@@ -74,6 +74,7 @@ const plan = ()=>{
     main.appendChild(plans);
 
     const toggle = document.createElement("div");
+    toggle.setAttribute("class", "toggle");
     const toggleSwitch = document.createElement("div");
     toggleSwitch.setAttribute("class", "toggleSwitch");
     const left = document.createElement("p");

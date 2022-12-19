@@ -112,7 +112,6 @@ body{
     align-items:center;
     gap:0.5rem;
     text-transform: capitalize;
-    margin-top:1.5rem;
 }
 
 .inputCheck{
@@ -276,6 +275,16 @@ body{
 .price{
     color:hsl(231, 11%, 63%);
     margin-top:0.5rem;
+}
+
+.toggle{
+    padding:1rem;
+    margin:2rem auto;
+    background-color:hsl(231, 100%, 99%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
 }
 
 
