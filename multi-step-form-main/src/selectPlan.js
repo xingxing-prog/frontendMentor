@@ -5,6 +5,7 @@ import pro from "./assets/images/icon-pro.svg";
 const plan = ()=>{
 
     const main = document.createElement("div");
+    main.setAttribute("class", "info");
     
 
     const h3 = document.createElement("h3");
@@ -18,6 +19,7 @@ const plan = ()=>{
     main.appendChild(sub);
 
     const plans = document.createElement("div");
+    plans.setAttribute("class", "plans");
 
     const plan1 = document.createElement("div");
     plan1.setAttribute("class", "plan");
@@ -65,6 +67,7 @@ const plan = ()=>{
     let price3 = document.createElement("p");
     price3.setAttribute("class", "price");
     price3.textContent = "$15/mo";
+    plan3.appendChild(planName3);
     plan3.appendChild(price3);
     plans.appendChild(plan3);
 
