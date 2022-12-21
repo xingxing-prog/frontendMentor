@@ -133,8 +133,23 @@ body{
 }
 
 .left{
+    color:hsl(213, 96%, 18%);
+    font-weight:500;   
+}
+
+.right{
+    color:hsl(231, 11%, 63%);
+    font-weight:500;   
+}
+
+.inputCheck:checked ~ .right{
+    color:hsl(213, 96%, 18%);
+}
+
+.inputCheck:checked ~ .left{
     color:hsl(231, 11%, 63%);
 }
+
 
 .labelInput::after{
     content:"";
@@ -150,7 +165,10 @@ body{
 
 .inputCheck:checked + .labelInput{
     background:hsl(213, 96%, 18%);
+
 }
+
+
 
 .inputCheck:checked + .labelInput::after{
     left:calc(100% - 4px);
@@ -257,6 +275,10 @@ body{
     margin-top:3rem;
 }
 
+.plans:hover{
+    cursor:pointer;
+}
+
 .plan{
     border:1px solid hsl(229, 24%, 87%);
     width:6.8rem;
@@ -285,6 +307,40 @@ body{
     align-items:center;
     justify-content:center;
 
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:7rem;
+}
+
+.goBack{
+    font-family:inherit;
+    padding:0.8rem 1.2rem;
+    font-weight:400;
+    font-size:16px;
+}
+
+.goBack{
+    cursor:pointer;
+    font-weight:500;
+    color: hsl(213, 96%, 18%);
+}
+
+.nextButton{
+   
+    color:#fff;
+    font-family:inherit;
+    padding:0.8rem 1.2rem;
+    background:hsl(213, 96%, 18%);
+    font-weight:400;
+    font-size:16px;
+    border-radius:0.5rem;
+}
+
+.nextButton:hover{
+    cursor:pointer;
 }
 
 

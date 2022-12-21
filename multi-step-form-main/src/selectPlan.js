@@ -93,13 +93,14 @@ const plan = ()=>{
     toggleSwitch.appendChild(labelInput);
     const right = document.createElement("p");
     right.textContent = "Yearly";
-    right.setAttribute("class", "left");
+    right.setAttribute("class", "right");
     toggleSwitch.appendChild(right);
     toggle.appendChild(toggleSwitch);
 
     main.appendChild(toggle);
 
     const buttons = document.createElement("div");
+    buttons.setAttribute("class", "buttons");
 
     const goBack = document.createElement("div");
     goBack.innerHTML = "Go Back";
