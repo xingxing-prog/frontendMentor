@@ -1,6 +1,7 @@
 
 const addOn = ()=>{
     const main = document.createElement("div");
+    main.setAttribute("class", "info");
 
     const h3 = document.createElement("h3");
     h3.setAttribute("class", "h3");
@@ -17,6 +18,7 @@ const addOn = ()=>{
     form.id = "pickOns";
 
     const online = document.createElement("div");
+    online.setAttribute("class", "type");
     const inputCheck = document.createElement("input");
     inputCheck.type = "checkbox";
     inputCheck.setAttribute("class", "checkbox");
