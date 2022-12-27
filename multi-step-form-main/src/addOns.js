@@ -23,14 +23,14 @@ const addOn = ()=>{
     inputCheck.type = "checkbox";
     inputCheck.setAttribute("class", "checkbox");
     online.appendChild(inputCheck);
-
+    
     const onlineType = document.createElement("div");
     const onlineContent = document.createElement("p");
-    onlineContent.setAttribute("class", "planName");
+    onlineContent.setAttribute("class", "onlineContent");
     onlineContent.textContent = "Online service";
     onlineType.appendChild(onlineContent);
-    //onlineType.appendChild(document.createElement("br"));
-    const onlineSub = document.createElement("p");
+   
+    const onlineSub = document.createElement("span");
     onlineSub.setAttribute("class", "subSmall");
     onlineSub.textContent = "Access to multiplayer games";
     onlineType.appendChild(onlineSub);
@@ -44,6 +44,7 @@ const addOn = ()=>{
     form.appendChild(online);
 
     const storage = document.createElement("div");
+    storage.setAttribute("class", "type");
     const inputCheck2 = document.createElement("input");
     inputCheck2.type = "checkbox";
     inputCheck2.setAttribute("class", "checkbox");
@@ -51,9 +52,9 @@ const addOn = ()=>{
 
     const storageType = document.createElement("div");
     const storageContent = document.createElement("p");
-    storageContent.setAttribute("class", "planName");
+    storageContent.setAttribute("class", "onlineContent");
     storageContent.textContent = "Larger storage";
-    storage.appendChild(storageContent);
+    storageType.appendChild(storageContent);
     //storageContent.appendChild(document.createElement("br"));
     const storageSub = document.createElement("p");
     storageSub.setAttribute("class", "subSmall");
@@ -64,11 +65,13 @@ const addOn = ()=>{
     const priceStorage = document.createElement("p");
     priceStorage.innerHTML = "$2/mo";
     priceStorage.setAttribute("class", "price");
-    storage.appendChild(priceOnline);
+    storage.appendChild(priceStorage);
 
     form.appendChild(storage);
 
     const profile = document.createElement("div");
+    profile.setAttribute("class", "type");
+
     const inputCheck3 = document.createElement("input");
     inputCheck3.type = "checkbox";
     inputCheck3.setAttribute("class", "checkbox");
@@ -76,9 +79,9 @@ const addOn = ()=>{
 
     const profileType = document.createElement("div");
     const profileContent = document.createElement("p");
-    profileContent.setAttribute("class", "planName");
+    profileContent.setAttribute("class", "onlineContent");
     profileContent.textContent = "Customizable profile";
-    profile.appendChild(profileContent);
+    profileType.appendChild(profileContent);
 
     //profileContent.appendChild(document.createElement("br"));
     const profileSub = document.createElement("p");
@@ -94,7 +97,10 @@ const addOn = ()=>{
 
     form.appendChild(profile);
 
-    const buttons = document.createElement("div");
+    main.appendChild(form);
+
+     const buttons = document.createElement("div");
+    buttons.setAttribute("class", "buttons");
 
     const goBack = document.createElement("div");
     goBack.innerHTML = "Go Back";
@@ -103,14 +109,12 @@ const addOn = ()=>{
    
 
     const button = document.createElement("button");
-    button.setAttribute("class", "next");
+    button.setAttribute("class", "nextButton");
     button.innerHTML = "Next Step";
     button.setAttribute("type", "submit");
     buttons.appendChild(button);
-   
-    main.appendChild(form);
-    main.appendChild(buttons);
 
+    main.appendChild(buttons);
     return main;
   
 }

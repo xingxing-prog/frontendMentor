@@ -346,3 +346,34 @@ body{
 
 
 /*selectPlan */
+
+/*add-ons*/
+.type{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    border:1px solid hsl(229, 24%, 87%);
+    gap:1rem;
+    padding:1rem;
+    border-radius:1rem;
+}
+
+.formPickOn{
+    margin-top:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.onlineContent { 
+
+    font-family:inherit;
+    font-size:16px;
+    font-weight:700;
+    color:hsl(213, 96%, 18%);
+    padding:4px;
+
+}
+
+
+/*add-ons*/
