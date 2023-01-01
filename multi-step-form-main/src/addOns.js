@@ -22,19 +22,24 @@ const addOn = ()=>{
     const inputCheck = document.createElement("input");
     inputCheck.type = "checkbox";
     inputCheck.setAttribute("class", "checkbox");
-    online.appendChild(inputCheck);
+
+    const onlineLeft = document.createElement("div");
+    onlineLeft.setAttribute("class", "leftSide");
+    onlineLeft.appendChild(inputCheck);
     
     const onlineType = document.createElement("div");
     const onlineContent = document.createElement("p");
     onlineContent.setAttribute("class", "onlineContent");
     onlineContent.textContent = "Online service";
     onlineType.appendChild(onlineContent);
-   
+ 
     const onlineSub = document.createElement("span");
     onlineSub.setAttribute("class", "subSmall");
     onlineSub.textContent = "Access to multiplayer games";
     onlineType.appendChild(onlineSub);
-    online.appendChild(onlineType);
+    onlineLeft.appendChild(onlineType);
+
+    online.appendChild(onlineLeft);
 
     const priceOnline = document.createElement("p");
     priceOnline.innerHTML = "$1/mo";
@@ -45,22 +50,26 @@ const addOn = ()=>{
 
     const storage = document.createElement("div");
     storage.setAttribute("class", "type");
+    const storageLeft = document.createElement("div");
+    storageLeft.setAttribute("class", "leftSide");
     const inputCheck2 = document.createElement("input");
     inputCheck2.type = "checkbox";
     inputCheck2.setAttribute("class", "checkbox");
-    storage.appendChild(inputCheck2);
+    storageLeft.appendChild(inputCheck2);
+
 
     const storageType = document.createElement("div");
     const storageContent = document.createElement("p");
     storageContent.setAttribute("class", "onlineContent");
     storageContent.textContent = "Larger storage";
     storageType.appendChild(storageContent);
-    //storageContent.appendChild(document.createElement("br"));
+    
     const storageSub = document.createElement("p");
     storageSub.setAttribute("class", "subSmall");
     storageSub.textContent = "Extra 1TB of cloud save";
     storageType.appendChild(storageSub);
-    storage.appendChild(storageType);
+    storageLeft.appendChild(storageType);
+    storage.appendChild(storageLeft);
 
     const priceStorage = document.createElement("p");
     priceStorage.innerHTML = "$2/mo";
@@ -71,24 +80,27 @@ const addOn = ()=>{
 
     const profile = document.createElement("div");
     profile.setAttribute("class", "type");
-
+    const profileLeft = document.createElement("div");
+    profileLeft.setAttribute("class", "leftSide");
     const inputCheck3 = document.createElement("input");
     inputCheck3.type = "checkbox";
     inputCheck3.setAttribute("class", "checkbox");
-    profile.appendChild(inputCheck3);
+    profileLeft.appendChild(inputCheck3);
 
     const profileType = document.createElement("div");
     const profileContent = document.createElement("p");
     profileContent.setAttribute("class", "onlineContent");
     profileContent.textContent = "Customizable profile";
     profileType.appendChild(profileContent);
+    profileLeft.appendChild(profileType);
 
     //profileContent.appendChild(document.createElement("br"));
     const profileSub = document.createElement("p");
     profileSub.setAttribute("class", "subSmall");
     profileSub.textContent = "Custom theme on your profile";
     profileType.appendChild(profileSub);
-    profile.appendChild(profileType);
+    profileLeft.appendChild(profileType);
+    profile.appendChild(profileLeft);
 
     const priceProfile = document.createElement("p");
     priceProfile.innerHTML = "$2/mo";
