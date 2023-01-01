@@ -351,11 +351,13 @@ body{
 .type{
     display:flex;
     align-items:center;
+    justify-content:space-between;
     flex-wrap:wrap;
     border:1px solid hsl(229, 24%, 87%);
     gap:1rem;
     padding:1rem;
     border-radius:1rem;
+    width:25rem;
 }
 
 .formPickOn{
@@ -363,6 +365,7 @@ body{
     display:flex;
     flex-direction:column;
     gap:1rem;
+    
 }
 
 .onlineContent { 
@@ -375,5 +378,8 @@ body{
 
 }
 
+.price{
+    float:right;
+}
 
 /*add-ons*/
