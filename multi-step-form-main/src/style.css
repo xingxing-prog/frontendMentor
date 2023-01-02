@@ -360,6 +360,10 @@ body{
     width:25rem;
 }
 
+.type:hover{
+    cursor:pointer;
+}
+
 .leftSide{
     display:flex;
     gap:2rem;
@@ -375,6 +379,7 @@ body{
     align-items: center;
     justify-content:center;
 }
+
 
 .checkbox{
     width:20px;
