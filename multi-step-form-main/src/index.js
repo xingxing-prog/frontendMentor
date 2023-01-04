@@ -11,8 +11,8 @@ function component(){
     
     //element.appendChild(info());
     //element.appendChild(plan());
-    element.appendChild(addOn());
-    //element.appendChild(finish());
+    //element.appendChild(addOn());
+    element.appendChild(finish());
     //element.appendChild(thank());
 
     

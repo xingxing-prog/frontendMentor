@@ -78,6 +78,7 @@ const result = ()=>{
     main.appendChild(planChoice);
 
     const buttons = document.createElement("div");
+    buttons.setAttribute("class", "buttons");
 
     const goBack = document.createElement("div");
     goBack.innerHTML = "Go Back";
@@ -86,12 +87,11 @@ const result = ()=>{
    
 
     const button = document.createElement("button");
-    button.setAttribute("class", "confirm");
-    button.innerHTML = "Confirm";
+    button.setAttribute("class", "nextButton");
+    button.innerHTML = "Next Step";
     button.setAttribute("type", "submit");
     buttons.appendChild(button);
-   
-  
+
     main.appendChild(buttons);
 
     return main;
