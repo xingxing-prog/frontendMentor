@@ -111,7 +111,7 @@ const addOn = ()=>{
 
     main.appendChild(form);
 
-     const buttons = document.createElement("div");
+    const buttons = document.createElement("div");
     buttons.setAttribute("class", "buttons");
 
     const goBack = document.createElement("div");
